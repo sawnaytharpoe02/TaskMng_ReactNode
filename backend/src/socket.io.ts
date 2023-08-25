@@ -5,7 +5,7 @@ const connectedSockets: Set<Socket> = new Set();
 export const configureSocket = (server: any) => {
   const io = new SocketIOServer(server, {
     cors: {
-      origin: 'http://localhost:5173',
+      origin: '*',
       methods: ['GET', 'POST'],
     },
   });
