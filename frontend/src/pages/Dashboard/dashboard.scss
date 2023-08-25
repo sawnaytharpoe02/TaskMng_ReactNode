@@ -1,0 +1,82 @@
+.dashboard {
+  .dashboard_col {
+    padding: 0.8rem;
+
+    .dashboard_col-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 1rem 0;
+      padding: 1rem;
+      gap: 1rem;
+      border-radius: 0.35rem;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      appearance: none;
+      background-color: #fcfcfd;
+      border-width: 0;
+      box-shadow: rgba(45, 35, 66, 0.4) 0px 0 0px 0px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        rgba(58, 65, 111, 0.5) 0 -4px 0 inset;
+      color: #36395a;
+      font-family: 'JetBrains Mono', monospace;
+      transition: box-shadow 0.15s, transform 0.15s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      will-change: box-shadow, transform;
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+
+      .icon {
+        font-size: 2.5rem;
+        color: #fff;
+      }
+
+      .dashboard_col-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          color: #fff;
+        }
+
+        .badge {
+          max-width: 50px;
+          background-color: #fff;
+          padding: 5px 20px;
+          text-align: center;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+
+    .dashboard_col-item.tasks {
+      background-image: radial-gradient(100% 100% at 100% 0, #c6e5ef 0, #528fef 100%);
+    }
+
+    .dashboard_col-item.projects {
+      background-image: radial-gradient(100% 100% at 100% 0, #ffd1f1 0, #b07def 100%);
+    }
+
+    .dashboard_col-item.employee {
+      background-image: radial-gradient(100% 100% at 100% 0, #fbeee9, #bec5d4 100%);
+    }
+
+    .dashboard_col-item.report {
+      background-image: radial-gradient(100% 100% at 100% 0, #e9f5df, #59b0b5 100%);
+    }
+  }
+}
+
+.table-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 1.1rem 0;
+}

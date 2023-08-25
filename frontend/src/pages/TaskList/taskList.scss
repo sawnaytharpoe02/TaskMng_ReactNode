@@ -1,0 +1,25 @@
+.flex-col {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag-status {
+  min-width: 6rem;
+  height: 1.8rem;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+.ant-form-item-required::before {
+  display: none !important;
+}
+
+.search-select {
+  .ant-select-selector {
+    height: 37px !important;
+  }
+  .ant-select-selection-item {
+    line-height: 37px !important;
+  }
+}

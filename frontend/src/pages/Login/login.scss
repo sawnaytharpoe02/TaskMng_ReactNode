@@ -1,0 +1,24 @@
+.login-form {
+  .login-form-forgot {
+    color: var(--cyan-7);
+    float: right;
+
+    &:hover {
+      color: var(--cyan-6);
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .login-form {
+    .login-form-forgot {
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+      float: left;
+    }
+
+    .login-form-remember {
+      font-size: 0.75rem;
+    }
+  }
+}
