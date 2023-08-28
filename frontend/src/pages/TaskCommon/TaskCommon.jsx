@@ -166,9 +166,9 @@ const TaskCommon = () => {
         const payload = {
           ...values,
           estimateStartDate: values.estimateStartDate
-            ? dayjs(values.estimateStart).format('YYYY-MM-DD')
+            ? dayjs(values.estimateStartDate).format('YYYY-MM-DD')
             : null,
-          estimateEndDate: values.estimateEndDate ? dayjs(values.estimateEnd).format('YYYY-MM-DD') : null,
+          estimateEndDate: values.estimateEndDate ? dayjs(values.estimateEndDate).format('YYYY-MM-DD') : null,
           actualStartDate: values.actualStartDate ? dayjs(values.actualStartDate).format('YYYY-MM-DD') : null,
           actualEndDate: values.actualEndDate ? dayjs(values.actualEndDate).format('YYYY-MM-DD') : null,
         };
