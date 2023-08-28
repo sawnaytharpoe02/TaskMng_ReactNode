@@ -6,10 +6,21 @@ import PropTypes from 'prop-types';
 const ExcelDownloadButton = ({ data, fileName }) => {
   const handleExcelDownload = () => {
     const workbook = XLSX.utils.book_new();
+
+    const statusOptions = [
+      { value: '0', label: 'Open' },
+      { value: '1', label: 'In Progress' },
+      { value: '2', label: 'Finish' },
+      { value: '3', label: 'Close' },
+    ];
     const dataWithCorrectHeaders = data.map((item, index) => ({
       ReportID: index + 1,
       Date: item.date,
-      Description: item.desc,
+      Description: `${item.reportedTo}, ${item.projectName}, ${item.taskTitle}, ${item.percentage}, ${
+        item.types
+      }, ${statusOptions.find((option) => option.value === item.status)?.label}, ${item.hour} hours, ${
+        item.problem_feeling === null ? 'Nothing' : item.problem_feeling
+      }`,
       ReportTo: item.reportedTo,
       ReportedBy: item.reportedBy,
     }));

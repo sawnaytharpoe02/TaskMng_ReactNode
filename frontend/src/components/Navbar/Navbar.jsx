@@ -218,9 +218,8 @@ const Navbar = () => {
             className="notification-item"
             onClick={() => handleEditNotification(notification?._id)}
           >
-            <div className="tag" icon={notification?.tag !== 'REPORT' ? <GoTasklist /> : <GoReport />}>
-              {notification?.tag}
-            </div>
+            <div className="tag">{notification?.tag}</div>
+
             <div className="notification-content">
               <Avatar size="large" src={notification?.profile} style={{ marginRight: '.2rem' }} />
               <div className="text-blk" dangerouslySetInnerHTML={{ __html: notification?.message }} />
@@ -266,7 +265,8 @@ const Navbar = () => {
                 <div className="admin_profile_btn">
                   <Tooltip placement="bottom" title={currentUser?.position !== 0 ? 'Member' : 'Admin'}>
                     <Button onClick={() => navigate('/profile')}>
-                      {currentUser?.employeeName}
+                      {(currentUser?.employeeName || '').slice(0, 5) +
+                        (currentUser?.employeeName.length > 5 ? '..' : '')}
                     </Button>
                   </Tooltip>
                 </div>
@@ -337,9 +337,7 @@ const Navbar = () => {
           <Link to="/profile">
             <Space style={{ margin: '0 15px 20px 20px', cursor: 'pointer' }}>
               <Avatar shape="square" size={64} src={currentUser?.profilePhoto} />
-              <p style={{ fontSize: '.9rem', marginLeft: '.75rem' }}>
-                {currentUser?.employeeName}
-              </p>
+              <p style={{ fontSize: '.9rem', marginLeft: '.75rem' }}>{currentUser?.employeeName}</p>
             </Space>
           </Link>
           <Menu

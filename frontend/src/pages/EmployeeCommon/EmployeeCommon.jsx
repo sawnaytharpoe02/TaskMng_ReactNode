@@ -140,7 +140,7 @@ const EmployeeCommon = () => {
 
       info ? setIsUploadVisible(!isUploadVisible) : message.error(`"${info.file.name}" file upload failed.`);
 
-      if (!isAllowedType) {
+      if (!isAllowedType && info.file.type) {
         form.setFieldsValue({
           profilePhoto: null,
         });
@@ -184,6 +184,23 @@ const EmployeeCommon = () => {
         .then((res) => {
           const employeeDetail = res.data.result;
 
+          let profilePhotoValue = null;
+          if (employeeDetail.profilePhoto) {
+            if (employeeDetail.profilePhoto !== profileString) {
+              profilePhotoValue = [
+                {
+                  uid: '-1',
+                  name: 'image',
+                  status: 'done',
+                  url: employeeDetail.profilePhoto,
+                },
+              ];
+            } else {
+              setIsUploadVisible(true);
+              form.setFieldsValue({ profilePhoto: null });
+            }
+          }
+
           form.setFieldsValue({
             employeeName: employeeDetail.employeeName,
             email: employeeDetail.email,
@@ -191,16 +208,7 @@ const EmployeeCommon = () => {
             phone: employeeDetail.phone !== 'null' ? employeeDetail.phone : null,
             dob: employeeDetail.dateOfBirth !== 'undefined' ? dayjs(employeeDetail.dateOfBirth) : '',
             position: employeeDetail.position,
-            profilePhoto: employeeDetail.profilePhoto
-              ? [
-                  {
-                    uid: '-1',
-                    name: 'image',
-                    status: 'done',
-                    url: employeeDetail.profilePhoto,
-                  },
-                ]
-              : null,
+            profilePhoto: profilePhotoValue,
           });
         })
         .catch((err) => {

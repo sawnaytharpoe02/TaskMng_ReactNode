@@ -75,6 +75,7 @@
     &:hover > .tag::after {
       transform: scaleX(1);
       transform-origin: bottom left;
+      height: 1.6px;
     }
 
     .msg_condition {
@@ -97,9 +98,9 @@
         position: absolute;
         width: 100%;
         transform: scaleX(0);
-        height: 1.2px;
         bottom: 0;
         left: 0;
+        height: 1.6px;
         background-color: #18a7ee90;
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;

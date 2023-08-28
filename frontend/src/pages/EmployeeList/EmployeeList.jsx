@@ -102,6 +102,7 @@ const EmployeeList = () => {
 
   const updateEmployeeList = (updatedList) => {
     setEmployeeLists(updatedList);
+    setData(updatedList);
   };
 
   const handleEmployeeEdit = (key) => {
