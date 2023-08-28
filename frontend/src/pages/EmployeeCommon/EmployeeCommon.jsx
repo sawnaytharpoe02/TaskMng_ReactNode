@@ -138,7 +138,7 @@ const EmployeeCommon = () => {
       const allowedTypes = ['image/jpeg', 'image/png', 'image/jpg'];
       const isAllowedType = allowedTypes.includes(info.file.type);
 
-      info ? setIsUploadVisible(false) : message.error(`"${info.file.name}" file upload failed.`);
+      info ? setIsUploadVisible(!isUploadVisible) : message.error(`"${info.file.name}" file upload failed.`);
 
       if (!isAllowedType) {
         form.setFieldsValue({
