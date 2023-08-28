@@ -174,7 +174,8 @@ const EmployeeCommon = () => {
   }, [pathname]);
 
   const profileString =
-    'https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=740&t=st=1690357726~exp=1690358326~hmac=e49a4665f42b5c5e130073ee52b0338c64c78aae2025d7262989045151ae20d6';
+    // 'https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=740&t=st=1690357726~exp=1690358326~hmac=e49a4665f42b5c5e130073ee52b0338c64c78aae2025d7262989045151ae20d6';
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsf_0pUDPlKJNpqfEG_XdAlEqXl0ARhJ82BMEHJDA8bPTV_J_b70U_QSG6wQETB4kvVgM&usqp=CAU';
 
   useEffect(() => {
     setIsFetchingDetail(true);
