@@ -184,23 +184,6 @@ const EmployeeCommon = () => {
         .then((res) => {
           const employeeDetail = res.data.result;
 
-          let profilePhotoValue = null;
-          if (employeeDetail.profilePhoto) {
-            if (employeeDetail.profilePhoto !== profileString) {
-              profilePhotoValue = [
-                {
-                  uid: '-1',
-                  name: 'image',
-                  status: 'done',
-                  url: employeeDetail.profilePhoto,
-                },
-              ];
-            } else {
-              setIsUploadVisible(true);
-              form.setFieldsValue({ profilePhoto: null });
-            }
-          }
-
           form.setFieldsValue({
             employeeName: employeeDetail.employeeName,
             email: employeeDetail.email,
@@ -208,7 +191,16 @@ const EmployeeCommon = () => {
             phone: employeeDetail.phone !== 'null' ? employeeDetail.phone : null,
             dob: employeeDetail.dateOfBirth !== 'undefined' ? dayjs(employeeDetail.dateOfBirth) : '',
             position: employeeDetail.position,
-            profilePhoto: profilePhotoValue,
+            profilePhoto: employeeDetail.profilePhoto
+              ? [
+                  {
+                    uid: '-1',
+                    name: 'image',
+                    status: 'done',
+                    url: employeeDetail.profilePhoto,
+                  },
+                ]
+              : null,
           });
         })
         .catch((err) => {
