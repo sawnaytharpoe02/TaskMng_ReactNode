@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
   --cyan-10: #002329;
@@ -9,7 +9,7 @@
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -42,16 +42,20 @@
 .custom-primary-btn {
   align-items: center;
   appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  ) !important;
   border: 0;
   border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
-    rgba(58, 65, 111, 0.5) 0 -2px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -2px 0 inset;
   box-sizing: border-box;
   color: #fff !important;
   cursor: pointer;
   display: inline-flex;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   height: 38px;
   justify-content: center;
   line-height: 1;
@@ -76,7 +80,8 @@
   }
 
   &:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
     transform: translateY(-2px);
   }
 
@@ -90,16 +95,20 @@
 .ant-btn-default.ant-btn-dangerous {
   align-items: center;
   appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #f6a0a0 0, #ff5468 100%);
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #f6a0a0 0,
+    #ff5468 100%
+  ) !important;
   border: 0;
   border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
-    rgba(58, 65, 111, 0.5) 0 -2px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -2px 0 inset;
   box-sizing: border-box;
   color: #fff !important;
   cursor: pointer;
   display: inline-flex;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   height: 38px;
   justify-content: center;
   line-height: 1;
@@ -124,7 +133,8 @@
   }
 
   &:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #ff3c4f 0 -3px 0 inset; /* Updated red color values */
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #ff3c4f 0 -3px 0 inset; /* Updated red color values */
     transform: translateY(-2px);
   }
 
@@ -137,16 +147,20 @@
 .custom-edit-btn {
   align-items: center;
   appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #00c1c8 0, var(--cyan-7) 100%);
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #00c1c8 0,
+    var(--cyan-7) 100%
+  ) !important;
   border: 0;
   border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
-    rgba(58, 65, 111, 0.5) 0 -2px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -2px 0 inset;
   box-sizing: border-box;
   color: #fff !important;
   cursor: pointer;
   display: inline-flex;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   height: 38px;
   justify-content: center;
   line-height: 1;
@@ -171,7 +185,8 @@
   }
 
   &:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #006d75 0 -3px 0 inset; /* Updated red color values */
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #006d75 0 -3px 0 inset; /* Updated red color values */
     transform: translateY(-2px);
   }
 
@@ -184,16 +199,20 @@
 .custom-success-btn {
   align-items: center;
   appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #00c1c8 0, var(--cyan-6) 100%);
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #00c1c8 0,
+    var(--cyan-6) 100%
+  );
   border: 0;
   border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
-    rgba(58, 65, 111, 0.5) 0 -2px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -2px 0 inset;
   box-sizing: border-box;
   color: #fff !important;
   cursor: pointer;
   display: inline-flex;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   height: 38px;
   justify-content: center;
   line-height: 1;
@@ -218,7 +237,8 @@
   }
 
   &:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #0c9ba6 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #0c9ba6 0 -3px 0 inset;
     transform: translateY(-2px);
   }
 
@@ -234,13 +254,13 @@
   background-image: radial-gradient(100% 100% at 100% 0, #e9f5df, #59b0b5 100%);
   border: 0;
   border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
-    rgba(58, 65, 111, 0.5) 0 -2px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -2px 0 inset;
   box-sizing: border-box;
   color: #fff !important;
   cursor: pointer;
   display: inline-flex;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   height: 38px;
   justify-content: center;
   line-height: 1;
@@ -265,7 +285,8 @@
   }
 
   &:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #499b9f 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #499b9f 0 -3px 0 inset;
     transform: translateY(-2px);
   }
 

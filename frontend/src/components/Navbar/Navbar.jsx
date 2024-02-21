@@ -59,7 +59,6 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       setIsLoggingOut(true);
-
       const res = await authService.logout();
       removeToken();
       removeUser();

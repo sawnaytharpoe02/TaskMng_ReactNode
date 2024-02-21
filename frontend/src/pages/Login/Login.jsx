@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Button, Checkbox, Form, Input, Col, Card, Row, message } from 'antd';
-import { LockOutlined, UserOutlined, LoginOutlined } from '@ant-design/icons';
-import authService from '../../services/authServices';
-import { MESSAGE, VALIDATE } from '../../constants/validate';
-import { setToken, setUser } from '../../utils/storage';
-import './login.scss';
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Button, Checkbox, Form, Input, Col, Card, Row, message } from "antd";
+import { LockOutlined, UserOutlined, LoginOutlined } from "@ant-design/icons";
+import authService from "../../services/authServices";
+import { MESSAGE, VALIDATE } from "../../constants/validate";
+import { setToken, setUser } from "../../utils/storage";
+import "./login.scss";
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -30,7 +30,7 @@ const Login = () => {
       setToken(token);
       setUser(res.data?.result);
 
-      navigate('/');
+      navigate("/");
     } catch (error) {
       const { data } = error.response;
       message.error(data.message);
@@ -41,35 +41,38 @@ const Login = () => {
   };
 
   return (
-    <Row style={{ justifyContent: 'center' }}>
+    <Row style={{ justifyContent: "center" }}>
       <Col xs={24} sm={24} md={20} lg={14} xl={10}>
         <Card
           title={
-            <p style={{ fontSize: '1.1rem', textAlign: 'center' }}>
-              <LoginOutlined style={{ marginRight: 8, fontSize: '20px' }} /> Task Management System
+            <p style={{ fontSize: "1.1rem", textAlign: "center" }}>
+              <LoginOutlined style={{ marginRight: 8, fontSize: "20px" }} />{" "}
+              Task Management System
             </p>
           }
-          bordered={false}
-        >
+          bordered={false}>
           <Form
             form={form}
             className="login-form"
             initialValues={{
               remember: true,
             }}
-            onFinish={onSubmit}
-          >
+            onFinish={onSubmit}>
             <Form.Item
               name="email"
               rules={[
                 { required: true, message: MESSAGE.EMAIL_REQUIRED },
-                { pattern: VALIDATE.EMAIL_REGEX, message: MESSAGE.EMAIL_INVALID_FORMAT },
-              ]}
-            >
+                {
+                  pattern: VALIDATE.EMAIL_REGEX,
+                  message: MESSAGE.EMAIL_INVALID_FORMAT,
+                },
+              ]}>
               <Input prefix={<UserOutlined />} placeholder="Enter your email" />
             </Form.Item>
 
-            <Form.Item name="password" rules={[{ required: true, message: MESSAGE.PASSWORD_REQUIRED }]}>
+            <Form.Item
+              name="password"
+              rules={[{ required: true, message: MESSAGE.PASSWORD_REQUIRED }]}>
               <Input.Password
                 prefix={<LockOutlined />}
                 type="password"
@@ -97,8 +100,7 @@ const Login = () => {
                 block
                 className="custom-primary-btn"
                 htmlType="submit"
-                disabled={form.getFieldValue('submitButtonDisabled')}
-              >
+                disabled={form.getFieldValue("submitButtonDisabled")}>
                 Log in
               </Button>
             </Form.Item>
