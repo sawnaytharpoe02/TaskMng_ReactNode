@@ -64,6 +64,28 @@ This project is a full-stack task management system designed to streamline proje
 6. Run the frontend application.
 7. Access the application in your browser.
 
+# .env.sample for backend
+```
+PORT = your_custom_port
+MONGO_URL = mongodb+srv://username:password@cluster0.typegqq.mongodb.net/TaskManagementSym?retryWrites=true&w=majority
+CLOUD_NAME = your_cloud_name
+CLOUD_API_KEY = your_cloud_api_key
+CLOUD_API_SECRET = your_cloud_api_secret
+MAIL_SERVICE = smtp.gmail.com
+MAIL_USER = your_email@gmail.com
+MAIL_PASS = your_password
+ABSTRACT_PRIVATE_KEY = your_abstract_private_key
+JWT_SECRET_KEY = your_jwt_secret_key
+CLIENT_DOMAIN = http://localhost:5173
+```
+# .env.sample for frontend
+```
+VITE_ENDPOINT = "http://localhost:5173/"
+VITE_API_ENDPOINT = "http://localhost:port/api/v1/"
+VITE_AUTH_API_ENDPOINT = "http://localhost:port/api/v1/auth/"
+NODE_ENV = 'development'
+```
+
 ### Backend
 
 1. Navigate to the backend directory.
