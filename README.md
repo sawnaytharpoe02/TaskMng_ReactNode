@@ -154,8 +154,8 @@ With these steps, you should be able to start both the backend and frontend serv
 | Password Reset Form | Form to set a new password after requesting a reset. | ![Password Reset Form](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/a2fe65c0-2910-4d07-b3bb-8ffa8c6e860a) |
 | Report Notification | Notification displayed for new reports. | ![Report Notification](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/1d9f8dc9-c80d-422b-98a4-129e40b4b9dc) |
 | Task Notification | Notification displayed for assigned tasks. | ![Task Notification](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/3d1307d5-9379-46ad-a83c-febcd2e68db9) |
-| Verify Email | Page displayed after clicking a verification link in the email. | ![Verify Email](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/5c979e29-32db-4e02-8bfd-7112796493e6) |
-| Verification Successful | Confirmation message after successful email verification. | ![Verification Successful](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/4c15b0d9-ee3e-4bd0-916c-d0338650f11f) |
+| Verify Email | User verifiy email link after creating a new employee. | ![Verify Email](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/5c979e29-32db-4e02-8bfd-7112796493e6) |
+| Verification Successful | Confirmation message page after successful email verification. | ![Verification Successful](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/4c15b0d9-ee3e-4bd0-916c-d0338650f11f) |
 
 
 
