@@ -131,3 +131,32 @@ NODE_ENV = 'development'
 4. Access the application in your browser by navigating to the specified URL provided by the frontend development server.
 
 With these steps, you should be able to start both the backend and frontend servers and access the application locally for development purposes.
+
+5. ## User Interface Screenshots
+
+| Feature | Description | Image |
+|---|---|---|
+| Dashboard | Provides an overview of projects, tasks, and reports. | ![Dashboard](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/6eccb5aa-2b2d-44d1-a940-c54fbcc62af9) |
+| Employee List | Lists all employees within the system. | ![Employee_List](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/9913a922-2577-4034-89ae-5b682b640668) |
+| Create Employee | Form to add a new employee. | ![Create Employee](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/8c7bd952-e15e-4ad3-a614-03a1c9ec7e44) |
+| Project List | Displays all projects with search and filter options. | ![Project List](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/d13941f4-a392-4197-a636-77169728a796) |
+| Create Project | Form to create a new project. | ![Create Project](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/89a00dc5-00fc-4322-8127-c275334e3826) |
+| Create Task | Form to assign tasks to employees. | ![Create Task](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/bb2fb1ac-f339-4e07-b926-444afe9912bc) |
+| Task List | Manages and tracks tasks with filtering by status. | ![Task List](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/b03fcdf7-a633-4b7a-a323-ed92ca613bd7) |
+| Create Report | Form to generate reports based on project data. | ![Create Report](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/64e17e2c-3b10-4299-911f-11bfb97492ed) |
+| Report Preview | Provides a visual representation of the generated report. | ![Report Preview](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/007ca7f3-956d-42f5-8756-b18632fb77b7) |
+| Report List | Lists all reports with search functionality. | ![Report List](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/4d8d3062-42d1-4c33-8525-cb83b1e16442) |
+| Employee Profile | View and edit employee information. | ![Employee Profile](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/1836e416-a074-4122-b540-179b034ac643) |
+| Change Password | Form to update user password. | ![Change Password](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/7773eaf8-0604-4011-8ea2-e11f85ce41ad) |
+| Forgot Password Form | Form to request a password reset link. | ![Forgot Password](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/a428bcbd-c70b-4403-99a9-50b5fdfcfadf) |
+| Login Page | User login interface. | ![Login Page](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/5dd785a9-1b9d-4828-834c-349e862d249a) |
+| Password Reset Email | Email notification sent for password reset. | ![Password Reset Email](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/2db2a616-65cd-4723-8c8c-5154c994c2ed) |
+| Password Reset Form | Form to set a new password after requesting a reset. | ![Password Reset Form](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/a2fe65c0-2910-4d07-b3bb-8ffa8c6e860a) |
+| Report Notification | Notification displayed for new reports. | ![Report Notification](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/1d9f8dc9-c80d-422b-98a4-129e40b4b9dc) |
+| Task Notification | Notification displayed for assigned tasks. | ![Task Notification](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/3d1307d5-9379-46ad-a83c-febcd2e68db9) |
+| Verify Email | User verifiy email link after creating a new employee. | ![Verify Email](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/5c979e29-32db-4e02-8bfd-7112796493e6) |
+| Verification Successful | Confirmation message page after successful email verification. | ![Verification Successful](https://github.com/sawnaytharpoe02/TaskMng_ReactNode/assets/100279951/4c15b0d9-ee3e-4bd0-916c-d0338650f11f) |
+
+
+
+
