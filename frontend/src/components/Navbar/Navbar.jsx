@@ -242,7 +242,7 @@ const Navbar = () => {
             <div style={{ display: 'flex', gap: '.6rem' }}>
               <img src={Logo} alt="logo" width="40px" height="40px" />
               <p>
-                Task Management <br /> System
+                Taskito
               </p>
             </div>
           </Link>

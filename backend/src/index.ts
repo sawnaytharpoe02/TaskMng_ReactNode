@@ -49,7 +49,7 @@ cloudinary.config({
 });
 
 // mongo setup
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 const options: any = { useNewUrlParser: true, useUnifiedTopology: true };
 mongoose
